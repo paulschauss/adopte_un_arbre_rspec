@@ -1,11 +1,11 @@
 <div class="container">
   <div class="btn-layout">
     <%= link_to "Retour", :back, class: "btn-ghost" %>
-    <%# if @tree.user == current_user %>
-      <%#= link_to edit_tree_path(@tree) do %>
-        <%# <i class="icon-edit fa-solid fa-pen-to-square"></i> %>
-      <%# end %>
-    <%# end %>
+    <% if @tree.user == current_user %>
+      <%= link_to edit_tree_path(@tree) do %>
+       <i class="icon-edit fa-solid fa-pen-to-square"></i>
+      <% end %>
+    <% end %>
   </div>
 
   <div class="show-tree-main">
