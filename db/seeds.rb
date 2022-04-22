@@ -29,8 +29,8 @@ pommier = Tree.create!(name: "Pommier de polo",
                        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
                        user: paul)
 
-# file = URI.open('https://www.consoglobe.com/wp-content/uploads/2020/12/taille-pommier_shutterstock_72593407.jpg')
-# pommier.photo.attach(io: file, filename: 'pommier.png', content_type: 'image/png')
+file = URI.open('https://www.consoglobe.com/wp-content/uploads/2020/12/taille-pommier_shutterstock_72593407.jpg')
+pommier.photo.attach(io: file, filename: 'pommier.png', content_type: 'image/png')
 
 puts "Created #{pommier.name}"
 
@@ -44,8 +44,8 @@ poirier = Tree.create!(name: "Abricotier de benjos",
                        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
                        user: ben)
 
-# file = URI.open('https://www.gammvert.fr/conseils/sites/default/files/styles/main_image/public/poirier-jr.jpg?itok=JmXIv08z')
-# poirier.photo.attach(io: file, filename: 'poirier.png', content_type: 'image/png')
+file = URI.open('https://www.gammvert.fr/conseils/sites/default/files/styles/main_image/public/poirier-jr.jpg?itok=JmXIv08z')
+poirier.photo.attach(io: file, filename: 'poirier.png', content_type: 'image/png')
 
 puts "Created #{poirier.name}"
 
@@ -59,8 +59,8 @@ cocotier = Tree.create!(name: "Cocotier de jojo",
                         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
                         user: jo)
 
-# file = URI.open('https://jardinage.lemonde.fr/images/dossiers/historique/mini/cocos-nucifera-184616-650-325.jpg')
-# cocotier.photo.attach(io: file, filename: 'cocotier.png', content_type: 'image/png')
+file = URI.open('https://jardinage.lemonde.fr/images/dossiers/historique/mini/cocos-nucifera-184616-650-325.jpg')
+cocotier.photo.attach(io: file, filename: 'cocotier.png', content_type: 'image/png')
 
 puts "Created #{cocotier.name}"
 puts "Finished!"

@@ -59,7 +59,8 @@ class TreesController < ApplicationController
                                  :price,
                                  :quantity_by_year,
                                  :fruit,
-                                 :description)
+                                 :description,
+                                 :photo)
   end
 
   def set_tree
