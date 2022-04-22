@@ -10,9 +10,9 @@
 
   <div class="show-tree-main">
     <h2><%= @tree.name %></h2>
-    <%# if @tree.photo.key %>
-      <%#= cl_image_tag @tree.photo.key, height: 300, width: 400, crop: :fill %>
-    <%# end %>
+    <% if @tree.photo.key %>
+      <%= cl_image_tag @tree.photo.key, height: 300, width: 400, crop: :fill %>
+    <% end %>
   </div>
 
   <div class="show-tree-body">
